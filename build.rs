@@ -259,6 +259,7 @@ fn build_opencv(out_dir: &str, src_dir: &str) -> BuildResult<()> {
         // TODO: Go through the options and figure out what we don't need.
         .define("WITH_FFMPEG:BOOL", "OFF")
         .define("WITH_TIFF:BOOL", "OFF")
+        .define("BUILD_PNG:BOOL", "ON")
         .define("BUILD_opencv_calib3d:BOOL", "ON")
         .define("BUILD_SHARED_LIBS", "OFF")
         .build();
